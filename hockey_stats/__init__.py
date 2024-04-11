@@ -17,3 +17,7 @@ def most_influent_player(player_stats):
             mvp_points = total_influent
             mvp = player["name"]
     return mvp_points, mvp
+
+def team_goals(player_stats):
+    total_goals = sum(map(lambda player: player["goals"], player_stats))
+    return total_goals
